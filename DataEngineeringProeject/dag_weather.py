@@ -3,6 +3,10 @@ from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from airflow.utils.dates import days_ago
 from datetime import datetime
+
+from featureExtraction import feature_extract
+
+from build_train_model import build_train
 from batch_ingest import ingest_data
 from transform import transform_data
 
@@ -18,7 +22,7 @@ default_args = {
 }
 
 dag = DAG(
-    'batch_ingest_dag_weather',
+    'batch_ingest_dag',
     default_args=default_args,
     description='ingest weather data',
     schedule_interval=timedelta(days=1),
@@ -34,7 +38,18 @@ transform_etl = PythonOperator(
     python_callable=transform_data,
     dag=dag,
 )
+feature_etl = PythonOperator(
+    task_id='feature_dataset',
+    python_callable=feature_extract,
+    dag=dag,
+)
+model_etl = PythonOperator(
+    task_id='build_train_dataset',
+    python_callable=build_train,
+    dag=dag,
+ )
+
+ingest_etl >> transform_etl >> feature_etl >> model_etl
 
 
 
-ingest_etl >> transform_etl
