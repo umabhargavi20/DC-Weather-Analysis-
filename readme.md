@@ -46,4 +46,5 @@ Sign up on Kaggle to access the dataset, ensure required Python dependencies are
 
 The project effectively combines automated data ingestion, machine learning predictions, and Tableau visualizations to provide weather insights for Washington DC. Its focus on using historical data for accurate predictions supports critical applications i.e. public safety, energy planning, and agriculture.This approach demonstrates strong potential for scalability and real-world impact. Opportunities for growth include expanding to other regions, integrating real-time data streams, and enhancing model accuracy. Transitioning to cloud tools, improving visualization interactivity, and documenting scalability benchmarks will further strengthen its adaptability and usefulness for broader applications.
 
-![Alt text](DataEngineeringProeject/Temp trends.jpg)
+DataEngineeringProeject/images/Screenshot 2024-12-05 223700.png
+
