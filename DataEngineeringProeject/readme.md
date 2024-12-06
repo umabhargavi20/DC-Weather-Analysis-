@@ -51,7 +51,6 @@ Sign up on Kaggle to access the dataset, ensure required Python dependencies are
 
 
 ### Infographic:
-A simple infographic describing the architecture of your data pipeline including datasets, storage, and tools used along with another final infographic describing the results of the engineering task accomplished. Examples can be provided if needed.
 
 <img src="images/architecture.png" alt="Description" width="500" height="300">
 
