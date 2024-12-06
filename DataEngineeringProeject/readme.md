@@ -39,6 +39,7 @@ The evaluation of the Gradient Boosting model demonstrates its strong predictive
 
 Visulizations:
 ![img.png](images%2Fimg.png)
+<img src="images/img1.png" alt="Description" width="500" height="300">
 ![img1.png](images%2Fimg1.png)
 ## Special Instructions: 
 Sign up on Kaggle to access the dataset, ensure required Python dependencies are installed, and upload the dataset to the specified S3 bucket for seamless ingestion.
@@ -48,12 +49,7 @@ Sign up on Kaggle to access the dataset, ensure required Python dependencies are
 A simple infographic describing the architecture of your data pipeline including datasets, storage, and tools used along with another final infographic describing the results of the engineering task accomplished. Examples can be provided if needed.
 ![architecture.png](images%2Farchitecture.png)
 ### Code: 
-
-A link to GitHub Repository
-
-
-
-
+https://github.com/umabhargavi20/pythonProject12
 ### Thorough Investigation
 
 The project effectively combines automated data ingestion, machine learning predictions, and Tableau visualizations to provide weather insights for Washington DC. Its focus on using historical data for accurate predictions supports critical applications i.e. public safety, energy planning, and agriculture.This approach demonstrates strong potential for scalability and real-world impact. Opportunities for growth include expanding to other regions, integrating real-time data streams, and enhancing model accuracy. Transitioning to cloud tools, improving visualization interactivity, and documenting scalability benchmarks will further strengthen its adaptability and usefulness for broader applications.
