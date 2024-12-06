@@ -31,7 +31,7 @@ After preprocessing, the dataset was found to be suitable for machine learning t
 ### Data Transformation Models used
 
 
-Implemented a two-step process involving Feature Extraction and Data Modeling for weather prediction. Raw weather data (2015–2024) was combined, and key features like tempmax, tempmin, humidity, precip, windgust, and year were selected, with temp as the target variable. Data was scaled, split into training and testing sets, and stored in S3. A Gradient Boosting Regressor with 100 boosting stages, a learning rate of 0.1, and a max depth of 3 was trained and evaluated. The model achieved excellent performance, with an MSE of 0.311, MAE of 0.413, and R² of 0.996, indicating high predictive accuracy for weather forecasting
+Implemented a two-step process involving Feature Extraction and Data Modeling for weather prediction. Raw weather data (2015–2024) was combined, and key **features like tempmax, tempmin, humidity, precip, windgust, and year** were selected, with **temp as the target variabl**e. Data was scaled, split into training and testing sets, and stored in S3. A Gradient **Boosting Regressor with 100 boosting stages, a learning rate of 0.1, and a max depth of 3** was trained and evaluated. The model achieved excellent performance, with an **MSE of 0.311, MAE of 0.413, and R² of 0.996**, indicating high predictive accuracy for weather forecasting
 Visualizations:
 
 <img src="images/img.png" alt="Description" width="500" height="300">
