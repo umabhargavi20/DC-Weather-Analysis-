@@ -18,7 +18,7 @@ Visualization: Tableau
 We are utilizing the Washington DC Historical Weather dataset from Kaggle, which spans 2015-2024 and includes 33 weather features. Our project’s goal is to build a Batch-ML-Visualization pipeline for daily temperature forecasting in Washington, DC.
 
 Data Ingestion: Data is batch-ingested using Apache Airflow, automating regular data pulls and storage in our S3 bucket.
-Modeling: We plan to integrate machine learning steps for predicting temperature and, if possible, precipitation.
+Modeling: We plan to integrate machine learning steps for predicting temperature.
 Visualization: The pipeline concludes with Tableau visualizations, enabling clear comparisons of predicted and observed weather patterns over time.
 
 ### Data Quality Assessment
@@ -36,7 +36,14 @@ In the Data Modeling stage, we utilized a **Gradient Boosting Regressor** due to
 
 The evaluation of the Gradient Boosting model demonstrates its strong predictive performance on the weather dataset. The **Mean Squared Error (MSE) of 0.311** indicates that, on average, the squared differences between the predicted and actual values are minimal, showcasing the model's accuracy in capturing the underlying trends in the data. Similarly, the **Mean Absolute Error (MAE) of 0.413** suggests that the model's predictions deviate by an average of 0.413 units from the actual values, which is a small error given that the data is normalized. Furthermore, the model achieved an impressive **R² Score of 0.996**, signifying that it explains 99.6% of the variance in the target variable (temp). This high R² value reflects the model's ability to accurately learn the relationship between the input features (tempmax, tempmin, humidity, precip, windgust, and year) and the target variable. Overall, these results indicate that the Gradient Boosting model is highly effective for this weather prediction task, though further validation on unseen data is recommended to ensure its generalizability.
 
+**Special Instructions**:
+Sign up on Kaggle to access the dataset, ensure required Python dependencies are installed, and upload the dataset to the specified S3 bucket for seamless ingestion.And also 
 
 **Infographic:**
-A simple infographic describing the architecture of your data pipeline including datasets, storage, and tools used along with another final infographic describing the results of the engineering task accomplished. Examples can be provided if needed.​​
+
+
+**Thorough Investigation**
+
+The project effectively combines automated data ingestion, machine learning predictions, and Tableau visualizations to provide weather insights for Washington DC. Its focus on using historical data for accurate predictions supports critical applications i.e. public safety, energy planning, and agriculture.This approach demonstrates strong potential for scalability and real-world impact. Opportunities for growth include expanding to other regions, integrating real-time data streams, and enhancing model accuracy. Transitioning to cloud tools, improving visualization interactivity, and documenting scalability benchmarks will further strengthen its adaptability and usefulness for broader applications.
+.​​
 
