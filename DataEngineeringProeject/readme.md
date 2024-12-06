@@ -37,10 +37,14 @@ In the Data Modeling stage, we utilized a Gradient Boosting Regressor due to its
 
 The evaluation of the Gradient Boosting model demonstrates its strong predictive performance on the weather dataset. The Mean Squared Error (MSE) of 0.311 indicates that, on average, the squared differences between the predicted and actual values are minimal, showcasing the model's accuracy in capturing the underlying trends in the data. Similarly, the Mean Absolute Error (MAE) of 0.413 suggests that the model's predictions deviate by an average of 0.413 units from the actual values, which is a small error given that the data is normalized. Furthermore, the model achieved an impressive R² Score of 0.996, signifying that it explains 99.6% of the variance in the target variable (temp). This high R² value reflects the model's ability to accurately learn the relationship between the input features (tempmax, tempmin, humidity, precip, windgust, and year) and the target variable. Overall, these results indicate that the Gradient Boosting model is highly effective for this weather prediction task, though further validation on unseen data is recommended to ensure its generalizability.
 
-Visulizations:
+Visualizations:
 
 <img src="images/img.png" alt="Description" width="500" height="300">
+This scatter plot explores the relationship between temperature (x-axis) and humidity (y-axis). Each dot represents a single day's data point. The intensity of the dot color reflects the amount of precipitation, with darker shades indicating higher precipitation levels. The visualization highlights clusters of high humidity at moderate temperatures and low humidity at extreme temperatures.
+
+
 <img src="images/img1.png" alt="Description" width="500" height="300">
+This line chart illustrates the minimum and maximum temperatures over time, spanning several years from 2015 to 2025. The red line represents maximum temperatures, while the blue line represents minimum temperatures. The cyclical pattern highlights seasonal variations, with peaks in summer months and troughs in winter months.
 
 ## Special Instructions: 
 Sign up on Kaggle to access the dataset, ensure required Python dependencies are installed, and upload the dataset to the specified S3 bucket for seamless ingestion.
